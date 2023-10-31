@@ -1,0 +1,24 @@
+.\" Manpage for rpmdepsearch.
+.\" Contact <1217507943@qq.com> to correct errors or typos.
+.TH man 8 "06 May 2023" "1.0" "rpmdepsearch man page"
+.SH NAME
+rpmdepsearch \- Query package dependencies
+.SH SYNOPSIS
+rpmdepsearch [package name...]
+.SH DESCRIPTION
+rpmdepsearch is a command-line tool that can query the dependencies of one or more packages. If 'rpmdepsearch setup' is entered, it will update the database.
+.SH OPTIONS
+setup Update the database
+.SH EXAMPLES
+Query the dependencies of the 'example-pkg' package:
+.br
+.rpmdepsearch example-pkg
+.br
+Update the database:
+.br
+.rpmdepsearch setup
+.SH AUTHOR
+Zoar_yalz (<1217507943@qq.com>)
+.SH SEE ALSO
+A list of related commands or man pages.
+

@@ -1,0 +1,5 @@
+cd ../src
+tar -czvf ~/rpmbuild/SOURCES/rpmdepsearch.tar.gz *
+tar -xzvf ~/rpmbuild/SOURCES/rpmdepsearch.tar.gz --directory ~/rpmbuild/BUILD
+rpmbuild -ba ../scripts/rpmdepsearch.spec
+rm -rf  ~/rpmbuild/BUILD/*
